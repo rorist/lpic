@@ -30,7 +30,8 @@ Boot the system
 
 ### Boot manager
 
-Stage 2 code that let the user choose the partition to load.
+Stage 2 code that let the user choose the partition to load and edit
+startup configurations.
 IE: LILO, GRUB(2), BOOTMGR, ...
 
 ### Chainloading
