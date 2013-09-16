@@ -11,6 +11,13 @@ Summary
 Hardware settings
 -----------------
 
+- List hardware devices: lspci, lsusb, lshw
+- Virtual filesystems: /proc /dev /sys
+ - /proc/paritions /proc/cpuinfo /proc/cmdline /proc/meminfo /proc/net /proc/dma /proc/interrupts
+ - /dev/sdX /dev/hdX /dev/ttyX /dev/lpX /dev/dsp /dev/usb
+ - /sys/class /sys/block /sys/bus
+
+
 Boot the system
 ---------------
 
