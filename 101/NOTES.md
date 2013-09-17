@@ -39,3 +39,20 @@ IE: LILO, GRUB(2), BOOTMGR, ...
 A boot manager loading an other boot manager, for instance LILO
 is loading BOOTMGR (Windows) on an other disk/partition.
 
+Runlevels, shutdown, and reboot
+-------------------------------
+
+- man init
+- Default run level: grep initdefault /etc/inittab
+- Find current runlevel: runlevel
+- Changing runlevel: init/telinit
+ - init is the first process to be started (pid=1)
+ - telinit is a symlink to init
+ - init is aware if its invoked from telinit or if it is already running
+
+### Basic runlevels
+
+- 0: Shutdown (or halt) the system
+- 1: Single user mode
+- 6: Reboot the system
+
