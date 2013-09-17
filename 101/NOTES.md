@@ -56,3 +56,10 @@ Runlevels, shutdown, and reboot
 - 1: Single user mode
 - 6: Reboot the system
 
+### Halt, reboot and poweroff
+
+poweroff and reboot are symlinks to the halt commands, and produces different results:
+
+- The halt command halt the system
+- The poweroff command halt and attempts to power it off
+- The reboot command halt and reboots it
