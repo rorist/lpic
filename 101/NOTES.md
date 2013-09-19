@@ -66,7 +66,9 @@ modprobe -r module_name
 </code></pre>
 
 #### /dev - Devices-related stuff, usb ports, video card
->Historically all the devices types were listed, but since kernel v ? it creates only the devices you really have. 
+
+>Historically all the devices types were listed, but since kernel v ? it creates only the devices you really have.
+
 <pre><code>/dev/sdX
 /dev/hdX
 /dev/ttyX
