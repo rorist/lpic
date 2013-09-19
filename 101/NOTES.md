@@ -55,13 +55,15 @@ modprobe -r module_name</code></pre>
 /proc/meminfo
 /proc/net
 /proc/dma
-/proc/interrupts</code></pre>
+/proc/interrupts
+/proc/sys/vm/swappiness</code></pre>
 <pre><code>/dev/sdX
 /dev/hdX
 /dev/ttyX
 /dev/lpX
 /dev/dsp
-/dev/usb</code></pre>
+/dev/usb
+/dev/mapper</code></pre>
 <pre><code>/sys/class
 /sys/block
 /sys/bus</code></pre>
@@ -72,6 +74,8 @@ mount
 df -h</code></pre>
 - dmidecode: list BIOS information (hardware list, features, ...)
 - free: memory information
+- swapiness: https://en.wikipedia.org/wiki/Swappiness
+- watch -n 1 'command'
 
 
 Boot the system
