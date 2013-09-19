@@ -4,9 +4,29 @@ System Architecture
 Summary
 -------
 
+- Basic CLI
 - Hardware settings
 - Boot the system
 - Runlevels
+
+Basic commandline
+-----------------
+
+- Explore the filesystem
+<pre><code>cd
+cd ..
+cd /
+cd /home/$USER
+cd ~
+ls
+ls -l
+ls -la
+find .
+locate test</code></pre>
+- Manipulate files
+<pre><code>cat myfile
+echo test > myfile
+echo test >> myfile</pre></code>
 
 Hardware settings
 -----------------
