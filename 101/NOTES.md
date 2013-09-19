@@ -21,6 +21,8 @@ cd ~
 ls
 ls -l
 ls -la
+rm myile
+touch myfile
 find .
 locate test</code></pre>
 - Manipulate files
