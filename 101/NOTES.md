@@ -65,13 +65,14 @@ modprobe -r module_name
 	/proc/PID/cmdline - Which cmdline has started the process
 </code></pre>
 
-- /dev
-<pre><code>/dev/sdX
-/dev/hdX
-/dev/ttyX
-/dev/lpX
-/dev/dsp
-/dev/usb</code></pre>
+> /dev - Devices-related stuff, usb ports, video card
+>Historically all the devices types were listed, but since kernel v ? it creates only the devices you really have. 
+> - /dev/sdX
+>/dev/hdX
+>/dev/ttyX
+>/dev/lpX
+>/dev/dsp
+>/dev/usb</code></pre>
 
 <pre><code>/sys/class
 /sys/block
