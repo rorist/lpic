@@ -43,7 +43,7 @@ lspci
 lspci -v -s 00:00.0
 lspci -vv -s 00:00.0
 </code></pre>
-- Kernel modules: lsmod, modprobe, insmode, rmmode
+- Kernel modules: lsmod, modprobe, insmode, rmmode, modinfo
 <pre><code>find /lib/modules/$(uname -r)</code></pre>
  - insmode/rmmode do not resolve modules dependencies, use modprobe!
 <pre><code>modprobe module_name
