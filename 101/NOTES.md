@@ -21,6 +21,8 @@ cd ~
 ls
 ls -l
 ls -la
+mv file1 file2
+cp file1 file2
 rm myile
 touch myfile
 find .
