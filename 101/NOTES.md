@@ -71,6 +71,7 @@ fdisk -l
 mount
 df -h</code></pre>
 - dmidecode: list BIOS information (hardware list, features, ...)
+- free: memory information
 
 
 Boot the system
