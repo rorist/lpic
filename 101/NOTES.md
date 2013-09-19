@@ -12,20 +12,34 @@ Hardware settings
 -----------------
 
 - List hardware devices: lspci, lsusb, lshw
-    lsusb
-    lsusb -v -s 001:001
-    lspci
-    lspci -v -s 00:00.0
-    lspci -vv -s 00:00.0
+<pre><code>lsusb
+lsusb -v -s 001:001
+lspci
+lspci -v -s 00:00.0
+lspci -vv -s 00:00.0
+</code></pre>
 - Kernel modules: lsmod, modprobe, insmode, rmmode
-    find /lib/modules/$(uname -r)
+<pre><code>find /lib/modules/$(uname -r)</code></pre>
  - insmode/rmmode do not resolve modules dependencies, use modprobe!
-    modprobe module_name
-    modprobe -r module_name
+<pre><code>modprobe module_name
+modprobe -r module_name</code></pre>
 - Virtual filesystems: /proc /dev /sys
- - /proc/paritions /proc/cpuinfo /proc/cmdline /proc/meminfo /proc/net /proc/dma /proc/interrupts
- - /dev/sdX /dev/hdX /dev/ttyX /dev/lpX /dev/dsp /dev/usb
- - /sys/class /sys/block /sys/bus
+<pre><code>/proc/paritions
+/proc/cpuinfo
+/proc/cmdline
+/proc/meminfo
+/proc/net
+/proc/dma
+/proc/interrupts</code></pre>
+<pre><code>/dev/sdX
+/dev/hdX
+/dev/ttyX
+/dev/lpX
+/dev/dsp
+/dev/usb</code></pre>
+<pre><code>/sys/class
+/sys/block
+/sys/bus</code></pre>
 
 
 Boot the system
