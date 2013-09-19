@@ -46,14 +46,14 @@ lspci -vv -s 00:00.0
 
 ### Kernel modules: lsmod, modprobe, insmode, rmmode
 <pre><code>find /lib/modules/$(uname -r)</code></pre>
-- insmode/rmmode do not resolve modules dependencies, use modprobe!
+#### insmode/rmmode do not resolve modules dependencies, use modprobe!
 <pre><code>modprobe module_name
 modprobe -r module_name
 </code></pre>
 
 ### Virtual filesystems: /proc /dev /sys
 
-- /proc  "Virtual" filesystem (in the memory). Realtime stuff containing all the processes 
+#### /proc  "Virtual" filesystem (in the memory). Realtime stuff containing all the processes 
 <pre><code>/proc/paritions
  /proc/cpuinfo
  /proc/cmdline
@@ -65,14 +65,14 @@ modprobe -r module_name
 	/proc/PID/cmdline - Which cmdline has started the process
 </code></pre>
 
-> /dev - Devices-related stuff, usb ports, video card
+#### /dev - Devices-related stuff, usb ports, video card
 >Historically all the devices types were listed, but since kernel v ? it creates only the devices you really have. 
-> - /dev/sdX
->/dev/hdX
->/dev/ttyX
->/dev/lpX
->/dev/dsp
->/dev/usb</code></pre>
+<pre><code>/dev/sdX
+/dev/hdX
+/dev/ttyX
+/dev/lpX
+/dev/dsp
+/dev/usb</code></pre>
 
 <pre><code>/sys/class
 /sys/block
