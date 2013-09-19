@@ -52,16 +52,18 @@ modprobe -r module_name
 </code></pre>
 
 ### Virtual filesystems: /proc /dev /sys
+
 - /proc  "Virtual" filesystem (in the memory). Realtime stuff containing all the processes 
 <pre><code>/proc/paritions
-- - /proc/cpuinfo
-- - /proc/cmdline
-- - /proc/meminfo
-- - /proc/net - All that concerns netowking like arp tables, protocol file (open sockets, etc.), 
-- - /proc/dma
-- - /proc/interrupts
-- - /proc/PID -  Info concerning a specific process
-- - - /proc/PID/cmdline - Which cmdline has started the process</code></pre>
+- /proc/cpuinfo
+- /proc/cmdline
+- /proc/meminfo
+- /proc/net - All that concerns netowking like arp tables, protocol file (open sockets, etc.), 
+- /proc/dma
+- /proc/interrupts
+- /proc/PID -  Info concerning a specific process
+	- /proc/PID/cmdline - Which cmdline has started the process</code></pre>
+
 - /dev
 <pre><code>/dev/sdX
 /dev/hdX
