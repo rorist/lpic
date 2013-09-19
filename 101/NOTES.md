@@ -70,7 +70,9 @@ modprobe -r module_name</code></pre>
 Boot the system
 ---------------
 
-- BIOS performs self test (POST)
+- BIOS performs self test (POST=Power On Self Test)
+ - Checks memory, motherboard components
+ - Bips on errors (keyboard not present, etc)
 - BIOS loads  and execute the MBR from bootable devices -> Stage 1
 - MBR code checks the partition table and look for primary
   partition marked as active and loads the first sector -> Stage 1
