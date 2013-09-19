@@ -65,6 +65,11 @@ modprobe -r module_name</code></pre>
 <pre><code>/sys/class
 /sys/block
 /sys/bus</code></pre>
+- Hard drive information
+<pre><code>sudo hdparm -v /dev/sda
+fdisk -l
+mount
+df -h</code></pre>
 
 
 Boot the system
