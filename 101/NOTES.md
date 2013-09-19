@@ -70,6 +70,7 @@ modprobe -r module_name</code></pre>
 fdisk -l
 mount
 df -h</code></pre>
+- dmidecode: list BIOS information (hardware list, features, ...)
 
 
 Boot the system
