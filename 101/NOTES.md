@@ -27,6 +27,7 @@ locate test</code></pre>
 <pre><code>cat myfile
 echo test > myfile
 echo test >> myfile</pre></code>
+- tab tab
 
 Hardware settings
 -----------------
