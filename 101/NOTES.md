@@ -36,32 +36,46 @@ echo test >> myfile</pre></code>
 Hardware settings
 -----------------
 
-- List hardware devices: lspci, lsusb, lshw
+### List hardware devices: lspci, lsusb, lshw
 <pre><code>lsusb
 lsusb -v -s 001:001
 lspci
 lspci -v -s 00:00.0
 lspci -vv -s 00:00.0
 </code></pre>
-- Kernel modules: lsmod, modprobe, insmode, rmmode, modinfo
+
+### Kernel modules: lsmod, modprobe, insmode, rmmode
 <pre><code>find /lib/modules/$(uname -r)</code></pre>
- - insmode/rmmode do not resolve modules dependencies, use modprobe!
+#### insmode/rmmode do not resolve modules dependencies, use modprobe!
 <pre><code>modprobe module_name
-modprobe -r module_name</code></pre>
-- Virtual filesystems: /proc /dev /sys
+modprobe -r module_name
+</code></pre>
+
+### Virtual filesystems: /proc /dev /sys
+
+#### /proc  "Virtual" filesystem (in the memory). Realtime stuff containing all the processes 
 <pre><code>/proc/paritions
-/proc/cpuinfo
-/proc/cmdline
-/proc/meminfo
-/proc/net
-/proc/dma
-/proc/interrupts</code></pre>
+ /proc/cpuinfo
+ /proc/cmdline
+ /proc/meminfo
+ /proc/net  All that concerns netowking like arp tables, protocol file (open sockets, etc.), 
+ /proc/dma
+ /proc/interrupts
+ /proc/PID -  Info concerning a specific process
+	/proc/PID/cmdline - Which cmdline has started the process
+</code></pre>
+
+#### /dev - Devices-related stuff, usb ports, video card
+
+>Historically all the devices types were listed, but since kernel v ? it creates only the devices you really have.
+
 <pre><code>/dev/sdX
 /dev/hdX
 /dev/ttyX
 /dev/lpX
 /dev/dsp
 /dev/usb</code></pre>
+
 <pre><code>/sys/class
 /sys/block
 /sys/bus</code></pre>
@@ -70,7 +84,9 @@ modprobe -r module_name</code></pre>
 fdisk -l
 mount
 df -h</code></pre>
-
+- Get bios rev, S/N, provided by the DMI table
+<pre><code>dmidecode
+<code></pre>
 
 Boot the system
 ---------------
