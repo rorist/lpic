@@ -55,14 +55,14 @@ modprobe -r module_name
 
 #### /proc  "Virtual" filesystem (in the memory). Realtime stuff containing all the processes 
 <pre><code>/proc/paritions
- /proc/cpuinfo
- /proc/cmdline
- /proc/meminfo
- /proc/net  All that concerns netowking like arp tables, protocol file (open sockets, etc.), 
- /proc/dma
- /proc/interrupts
- /proc/PID -  Info concerning a specific process
-	/proc/PID/cmdline - Which cmdline has started the process
+/proc/cpuinfo
+/proc/cmdline
+/proc/meminfo
+/proc/net  All that concerns netowking like arp tables, protocol file (open sockets, etc.), 
+/proc/dma
+/proc/interrupts
+/proc/PID -  Info concerning a specific process
+/proc/PID/cmdline - Which cmdline has started the process
 </code></pre>
 
 #### /dev - Devices-related stuff, usb ports, video card
@@ -135,3 +135,4 @@ poweroff and reboot are symlinks to the halt commands, and produces different re
 - The halt command halt the system
 - The poweroff command halt and attempts to power it off
 - The reboot command halt and reboots it
+
