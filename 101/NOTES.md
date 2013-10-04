@@ -32,6 +32,8 @@ locate test</code></pre>
 echo test > myfile
 echo test >> myfile</pre></code>
 - tab tab
+- Loop device
+- Hybrid ISO
 
 Hardware settings
 -----------------
