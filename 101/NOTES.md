@@ -78,7 +78,8 @@ modprobe -r module_name
 /dev/lpX
 /dev/dsp
 /dev/usb
-/dev/mapper</code></pre>
+/dev/mapper
+/dev/tcp/127.0.0.1/1234</code></pre>
 
 <pre><code>/sys/class
 /sys/block
