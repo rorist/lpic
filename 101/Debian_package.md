@@ -12,7 +12,6 @@ Install, upgrade and uninstall Debian binary packages
 -----------------------------------------------------
 
 <pre><code>
-
 apt-get install vim-runtime
 apt-get remove  vim-runtime
 apt-get purge   vim-runtime     # supprime fichiers de configuration
