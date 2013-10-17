@@ -141,3 +141,10 @@ poweroff and reboot are symlinks to the halt commands, and produces different re
 - The poweroff command halt and attempts to power it off
 - The reboot command halt and reboots it
 
+### Master Boot Record ###
+- Decompile the MBR
+<pre><code>
+    dd if=/dev/sda of=/tmp/pg.mbr bs=1 count=440
+    objdump -D -b binary -mi386 -Maddr16,data16 /tmp/pg.mbr
+<code></pre>
+
