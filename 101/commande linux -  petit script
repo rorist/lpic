@@ -1,0 +1,49 @@
+[code]
+#--- Premier script ---#
+#--- auteur : philou - Fixme 
+#--- date : le 03.10.2013 
+#--- date de mod : le 17.10.2013
+#--- permet de tester certaines commandes shell dans un environnement linux 
+
+#--- démarrer le bash ---
+#!/bin/bash 
+
+#--- se placer dans un repertoire de travail ---
+echo se placer dans un repertoire "test"
+ls ~/Test_Fixme && echo dossier existant || mkdir ~/Test_Fixme && echo dossier creer    
+
+#--- visualisation de dosiers ou fichiers  --- 
+echo visualiser les dossiers ou repertoir dans le home  
+cd ~ 
+ls -la
+
+#--- creation de repertoire --- 
+echo creer repertoir & visualisation
+cd ~/Test_Fixme 
+mkdir TEST_A & mkdir TEST_B 
+ls -a
+
+#--- creation de fichier ---
+echo creer un fichier et le visualiser 
+cd ~/Test_Fixme/TEST_A
+touch fichier_B    
+ls -a 
+
+#--- deplacer un fichier dans un autre repertoire --- 
+mv fichier_B ~/Test_Fixme/TEST_B 
+touch fichier_A
+echo visualisation dans le repertoire TEST_A  
+ls -a 
+echo visulaisation dans le repertoire TEST_B 
+ls -a ~/Test_Fixme/TEST_B
+
+#--- copie le MBR (fichier tables des partions + lancement boot) ---
+echo copier MBR
+cd ~/Test_Fixme/
+mkdir MBR_SAUV
+sudo dd if=/dev/sda of=/home/philou/Test_Fixme/MBR_SAUV/mbr_file bs=512 count=1 
+
+echo afficher les 512octets
+cd ~/Test_Fixme/MBR_SAUV
+od -x mbr_file
+[\code]
