@@ -40,6 +40,8 @@ apt-get purge   vim-runtime     # Delete files and configuration files
 
 </code></pre>
 
+
+
 ### Graphic interfaces ###
 <pre><code>
 update-manager             # update manager
