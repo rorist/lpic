@@ -30,6 +30,8 @@ deb-src http://archive.ubuntu.com/ubuntu precise universe
 apt-get update                  # Updates the list of available packages
 /var/lib/apt/lists/             # List of available packages
 
+apt-get upgrade                 # Install the newest versions of all packages currently installed on the system
+
 apt-get install vim-runtime     # Install package. Content vimtutor
 apt-get remove  vim-runtime     # Remove files of the package
 apt-get purge   vim-runtime     # Delete files and configuration files
