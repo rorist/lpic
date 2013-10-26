@@ -42,9 +42,8 @@ apt-get purge   vim-runtime     # Delete files and configuration files
 
 ### Graphic interfaces ###
 
-update-manager             # update manager
-software-properties-gtk    # Software source, repository
+update-manager             # update manager  
+software-properties-gtk    # Software source, repository  
 
-synaptic                   # Packages manager
-aptitude                   # Packages manager
-
+synaptic                   # Packages manager  
+aptitude                   # Packages manager  
