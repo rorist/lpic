@@ -11,14 +11,9 @@ Summary
 Install, upgrade and uninstall Debian binary packages
 -----------------------------------------------------
 
-### Repository
+### Repository ###
+
 <pre><code>/etc/apt/sources.list           # Repository
-
-deb http://archive.ubuntu.com/ubuntu precise main restricted
-deb-src http://archive.ubuntu.com/ubuntu precise main restricted
-
-deb http://archive.ubuntu.com/ubuntu precise-updates main restricted
-deb-src http://archive.ubuntu.com/ubuntu precise-updates main restricted
 
 deb http://archive.ubuntu.com/ubuntu precise universe
 deb-src http://archive.ubuntu.com/ubuntu precise universe
@@ -30,13 +25,13 @@ deb-src http://archive.ubuntu.com/ubuntu precise universe
 **folder**  Component name or folder name.  
 
 
-- Install, remove, purge a package
+### Install, remove, purge a package ###
 <pre><code>
-/etc/apt/sources.list           # Repository
-apt-get update                  # Met à jour les listes des paquets disponible
+apt-get update                  # Updates the list of available packages
 /var/lib/apt/lists/             # List of available packages
-apt-get install vim-runtime     # Content vimtutor
-apt-get remove  vim-runtime
-apt-get purge   vim-runtime     # Delete configuration files
+
+apt-get install vim-runtime     # Install package. Content vimtutor
+apt-get remove  vim-runtime     # Remove files of the package
+apt-get purge   vim-runtime     # Delete files and configuration files
 
 </code></pre>
