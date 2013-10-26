@@ -12,8 +12,7 @@ Install, upgrade and uninstall Debian binary packages
 -----------------------------------------------------
 
 ### Repository
-<pre><code>
-/etc/apt/sources.list           # Repository
+<pre><code>/etc/apt/sources.list           # Repository
 deb http://archive.ubuntu.com/ubuntu precise main restricted
 deb-src http://archive.ubuntu.com/ubuntu precise main restricted
 
@@ -22,7 +21,6 @@ deb-src http://archive.ubuntu.com/ubuntu precise-updates main restricted
 
 deb http://archive.ubuntu.com/ubuntu precise universe
 deb-src http://archive.ubuntu.com/ubuntu precise universe
-
 </code></pre>
 
 **deb** Binary packages.  
