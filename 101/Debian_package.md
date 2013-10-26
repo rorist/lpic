@@ -26,10 +26,10 @@ deb-src http://archive.ubuntu.com/ubuntu precise universe
 
 </code></pre>
 
->**deb** Binary packages.  
->**deb-src** Source packages.  
->**precise** Distribution name.  
->**folder**  Component name or folder name.  
+**deb** Binary packages.  
+**deb-src** Source packages.  
+**precise** Distribution name.  
+**folder**  Component name or folder name.  
 
 
 - Install, remove, purge a package
