@@ -38,11 +38,34 @@ apt-get install vim-runtime     # Install package. Content vimtutor
 apt-get remove  vim-runtime     # Remove files of the package
 apt-get purge   vim-runtime     # Delete files and configuration files
 
+apt-get [-s, --simulate, --just-print, --dry-run, --recon, --no-act] Simulate install
+apt-get install [-s| --simulate]      vim     # Simutate install
+
+apt-get install [-d| --download-only] vim     # Download vim package without install
+
+apt-get remove --auto-remove vim # Remove vim and non necessary packages dependencies
+apt-get autoremove               # Remove non necessary packages dependencies
+
 </code></pre>
 
 
+Obtain package information
+--------------------------
 
-### Graphic interfaces ###
+<pre><code>
+apt-cache depends  vi            # vi depend de quel packages (au-dessus de vi)
+apt-cache rdepends vi            # packages dependent de vi (au-dessous de vi) 
+apt-cache search "linux loader"
+apt-cache search kdebase         # search package kdebase
+apt-cache dumpavail              # liste packet disponible
+apt-cache show    vim            # semblable a dpkg --print-avail vim  
+apt-cache showpkg vim            # liste nom packet, dependance, ver., ...
+</code></pre>
+
+
+Graphic interfaces
+------------------
+
 <pre><code>
 update-manager             # update manager
 software-properties-gtk    # Software source, repository
