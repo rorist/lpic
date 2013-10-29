@@ -59,8 +59,8 @@ apt-get autoclean    # Delete .deb files that can no longer be downloaded
 </code></pre>
 
 
-Obtain package information
---------------------------
+Obtain package information like version, content, dependencies, package integrity and installation status (whether or not the package is installed)
+---------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### apt-cache
 
