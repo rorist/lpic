@@ -33,6 +33,7 @@ apt-get update                  # Updates the list of available packages
 /var/lib/apt/lists/             # List of available packages
 
 apt-get upgrade                 # Install the newest versions of all packages currently installed on the system
+/var/cache/apt/archives/        # Folder containing downloaded .deb files
 
 apt-get install vim-runtime     # Install package. Content vimtutor
 apt-get remove  vim-runtime     # Remove files of the package
@@ -45,6 +46,10 @@ apt-get install [-d| --download-only] vim     # Download vim package without ins
 
 apt-get remove --auto-remove vim # Remove vim and non necessary packages dependencies
 apt-get autoremove               # Remove non necessary packages dependencies
+
+
+apt-get clean        # Delete .deb files downloaded in folder /var/cache/apt/archives
+apt-get autoclean    # Delete .deb files that can no longer be downloaded
 
 </code></pre>
 
