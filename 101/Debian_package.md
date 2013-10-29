@@ -49,13 +49,9 @@ apt-get remove --auto-remove vim # Remove vim and non necessary packages depende
 apt-get autoremove               # Remove non necessary packages dependencies
 </code></pre>
 
-### Cache management ###
 
+### Install, remove, a package with dpkg ###
 <pre><code>
-/var/cache/apt/archives/        # Folder containing downloaded .deb files
-
-apt-get clean        # Delete .deb files downloaded in folder /var/cache/apt/archives
-apt-get autoclean    # Delete .deb files that can no longer be downloaded
 </code></pre>
 
 
@@ -78,6 +74,17 @@ apt-cache showpkg vim            # list package name, dependencies, ver., ...
 
 <pre><code>
 
+</code></pre>
+
+
+Cache management
+----------------
+
+<pre><code>
+/var/cache/apt/archives/        # Folder containing downloaded .deb files
+
+apt-get clean        # Delete .deb files downloaded in folder /var/cache/apt/archives
+apt-get autoclean    # Delete .deb files that can no longer be downloaded
 </code></pre>
 
 
