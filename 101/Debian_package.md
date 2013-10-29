@@ -27,7 +27,7 @@ software-properties-gtk    # GUI for Repository
 **folder**  Component name or folder name.  
 
 
-### Install, remove, purge a package ###
+### Install, remove, purge, download a package with apt ###
 <pre><code>
 apt-get update                  # Updates the list of available packages
 /var/lib/apt/lists/             # List of available packages
