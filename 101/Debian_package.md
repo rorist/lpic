@@ -53,13 +53,13 @@ Obtain package information
 --------------------------
 
 <pre><code>
-apt-cache depends  vi            # vi depend de quel packages (au-dessus de vi)
-apt-cache rdepends vi            # packages dependent de vi (au-dessous de vi) 
+apt-cache depends  vim           # vim depends on which packages (above vim)
+apt-cache rdepends vim           # Packages below vim 
 apt-cache search "linux loader"
 apt-cache search kdebase         # search package kdebase
-apt-cache dumpavail              # liste packet disponible
-apt-cache show    vim            # semblable a dpkg --print-avail vim  
-apt-cache showpkg vim            # liste nom packet, dependance, ver., ...
+apt-cache dumpavail              # list of available packages
+apt-cache show    vim            # Like dpkg --print-avail vim  
+apt-cache showpkg vim            # list package name, dependencies, ver., ...
 </code></pre>
 
 
