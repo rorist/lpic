@@ -62,6 +62,8 @@ apt-get autoclean    # Delete .deb files that can no longer be downloaded
 Obtain package information
 --------------------------
 
+### apt-cache
+
 <pre><code>
 apt-cache depends  vim           # vim depends on which packages (above vim)
 apt-cache rdepends vim           # Packages below vim 
@@ -70,6 +72,12 @@ apt-cache search kdebase         # search package kdebase
 apt-cache dumpavail              # list of available packages
 apt-cache show    vim            # Like dpkg --print-avail vim  
 apt-cache showpkg vim            # list package name, dependencies, ver., ...
+</code></pre>
+
+### dpkg ###
+
+<pre><code>
+
 </code></pre>
 
 
