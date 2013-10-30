@@ -52,6 +52,13 @@ apt-get autoremove               # Remove non necessary packages dependencies
 
 ### Install, remove, a package with dpkg ###
 <pre><code>
+apt-get download vim             # download the given binary package into the current directory
+
+dpkg -i        vim_7.deb          # install 
+dpkg --install vim_7.deb          # install 
+
+dpkg -r       vim                 # Remove
+dpkg --remove vim                 # Remove
 </code></pre>
 
 
@@ -73,6 +80,11 @@ apt-cache showpkg vim            # list package name, dependencies, ver., ...
 ### dpkg ###
 
 <pre><code>
+
+
+dpkg -I     packageName.deb             # Show information about a package file
+dpkg --info packageName.deb             # Show information about a package file
+dpkg -I packageName.deb | grep Depends  # see the dependencies
 
 </code></pre>
 
