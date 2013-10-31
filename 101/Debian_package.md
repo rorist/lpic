@@ -80,7 +80,7 @@ apt-cache showpkg vim            # list package name, dependencies, ver., ...
 ### dpkg ###
 
 <pre><code>
-
+dpkg -c, --contents packageName.deb     # List contents of a deb package
 
 dpkg -I     packageName.deb             # Show information about a package file
 dpkg --info packageName.deb             # Show information about a package file
