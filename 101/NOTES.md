@@ -96,9 +96,11 @@ df -h</code></pre>
 Boot the system
 ---------------
 
+- Motherboard is powered (basic power tests)
 - BIOS performs self test (POST=Power On Self Test)
  - Checks memory, motherboard components
  - Bips on errors (keyboard not present, etc)
+- BIOS read SETUP (configuration, ..)
 - BIOS loads  and execute the MBR from bootable devices -> Stage 1
 - MBR code checks the partition table and look for primary
   partition marked as active and loads the first sector -> Stage 1
@@ -115,6 +117,12 @@ IE: LILO, GRUB(2), BOOTMGR, ...
 
 A boot manager loading an other boot manager, for instance LILO
 is loading BOOTMGR (Windows) on an other disk/partition.
+
+Initrd 
+--------------
+- Load a filesystem in memory to continue the boot
+- uncompress initrd
+ mkdir prout; cd prout; gunzip < /boot/initrd.img | cpio -i --make-directories
 
 Runlevels, shutdown, and reboot
 -------------------------------
