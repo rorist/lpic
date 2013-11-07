@@ -80,6 +80,12 @@ apt-cache showpkg vim            # list package name, dependencies, ver., ...
 ### dpkg ###
 
 <pre><code>
+/var/lib/dpkg/available          # Available packages
+/var/lib/dpkg/status             # Status of packages (installed, config) 
+/var/lib/dpkg/info/              # scripts & config files of installed packages
+
+apt-get download vim             # download the given binary package into the current directory
+
 dpkg -c, --contents packageName.deb     # List contents of a deb package
 
 dpkg -I     packageName.deb             # Show information about a package file
