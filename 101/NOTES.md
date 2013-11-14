@@ -156,3 +156,53 @@ poweroff and reboot are symlinks to the halt commands, and produces different re
     objdump -D -b binary -mi386 -Maddr16,data16 /tmp/pg.mbr
 <code></pre>
 
+Disk Management
+---------------
+
+### Partition
+- Division du disque en unité logique = partition
+- fdisk, sfdisk
+   Disk paritionnement 
+- sfdisk can take as input a file describing the format of the disk and formats it
+- sfdisk, export partition table (so it can be re-imported)
+    sfdisk -d  /dev/sda > /tmp/partition.out
+- gparted
+   Partitionnement and format
+- partprobe to update the partition table on the OS
+
+###Format
+- mkfs
+    Create the filesystem = format a partition
+- mkfs.TYPE where type is optionnal and is the type of filesystem
+
+### FS integrity
+- fsck, check the integrity of the block
+- force fsck at boot
+    touch /forcefsck; reboot
+- display information on a filesystem
+    dumpe2fs /dev/sda1 | less
+- resize file system (ext2,3,4)
+    resize2fs
+
+# Mounting
+- manually mount fs
+    mkdir /mnt/test
+    mount -t ext2 /dev/sda1 /mnt/test
+
+- fstab, store all partition mount information
+    /dev/sdb1   /media/sdcard    ext4    defaults
+
+- Handle quota with quotacheck, quotaon, usrquota, FIXME
+
+Sysfs and Udev
+--------------
+
+- Sysfs allow read-only acces to device from user mode
+- devices order by bus types: /sys/bus
+- udev uses /sys to populate /dev
+- udev can take action when a device pops
+- Create custom rules in /etc/udev/*.rules
+- DBUS allows user application to take actions when new devices appears
+
+
+
