@@ -203,6 +203,5 @@ Sysfs and Udev
 - udev can take action when a device pops
 - Create custom rules in /etc/udev/*.rules
 - DBUS allows user application to take actions when new devices appears
-
-
-
+- Look at device information with udev:
+    udevadm info -a -p /devices/pci0000:00/0000:00:1a.0/usb1
