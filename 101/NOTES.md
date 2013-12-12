@@ -205,4 +205,9 @@ Sysfs and Udev
 - DBUS allows user application to take actions when new devices appears
 
 
+Package managers
+----------------
+
+- apt-get / dpkg
+- yum / rpm
 
