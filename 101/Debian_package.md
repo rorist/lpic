@@ -70,9 +70,12 @@ Obtain package information like version, content, dependencies, package integrit
 <pre><code>
 apt-cache depends  vim           # vim depends on which packages (above vim)
 apt-cache rdepends vim           # Packages below vim 
+
 apt-cache search "linux loader"
 apt-cache search kdebase         # search package kdebase
+
 apt-cache dumpavail              # list of available packages
+
 apt-cache show    vim            # Like dpkg --print-avail vim  
 apt-cache showpkg vim            # list package name, dependencies, ver., ...
 </code></pre>
