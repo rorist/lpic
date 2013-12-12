@@ -205,3 +205,10 @@ Sysfs and Udev
 - DBUS allows user application to take actions when new devices appears
 - Look at device information with udev:
     udevadm info -a -p /devices/pci0000:00/0000:00:1a.0/usb1
+
+Package managers
+----------------
+
+- apt-get / dpkg
+- yum / rpm
+
