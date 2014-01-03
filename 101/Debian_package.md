@@ -79,8 +79,8 @@ apt-cache dumpavail              # list of available packages
 apt-cache show    vim            # Like dpkg --print-avail vim  
 apt-cache showpkg vim            # list package name, dependencies, ver., ...
 
-apt-cache policy                 # 
-apt-cache policy vim
+apt-cache policy                 # Print out the priorities of each source
+apt-cache policy vim             # Print out the detailed information about the priority selection
 </code></pre>
 
 ### dpkg ###
