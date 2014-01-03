@@ -98,6 +98,9 @@ dpkg -I     packageName.deb             # Show information about a package file
 dpkg --info packageName.deb             # Show information about a package file
 dpkg -I packageName.deb | grep Depends  # see the dependencies
 
+dpkg -l                          # List all packages
+dpkg -l 'vim*'                   # List packages matching pattern 'vim*'
+
 </code></pre>
 
 
