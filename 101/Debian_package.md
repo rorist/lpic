@@ -90,6 +90,7 @@ apt-cache policy vim             # Print out the detailed information about the 
 Same commands as apt-cache and apt-get : install, remove, purge, search, ... see manpage.
 <pre><code>
 aptitude show vim                # show package info of vim
+
 </code></pre>
 
 ### dpkg ###
