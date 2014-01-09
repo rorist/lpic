@@ -7,6 +7,8 @@ Summary
 - Install, upgrade and uninstall Debian binary packages.
 - Find packages containing specific files or libraries which may or may not be installed.
 - Obtain package information like version, content, dependencies, package integrity and installation status (whether or not the package is installed).
+- Cache management
+- Graphic interfaces
 
 Install, upgrade and uninstall Debian binary packages
 -----------------------------------------------------
@@ -65,7 +67,7 @@ dpkg --remove vim                 # Remove
 Obtain package information like version, content, dependencies, package integrity and installation status (whether or not the package is installed)
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 
-### apt-cache
+### apt-cache ###
 
 <pre><code>
 apt-cache depends  vim           # vim depends on which packages (above vim)
@@ -81,6 +83,16 @@ apt-cache showpkg vim            # list package name, dependencies, ver., ...
 
 apt-cache policy                 # Print out the priorities of each source
 apt-cache policy vim             # Print out the detailed information about the priority selection
+</code></pre>
+
+### aptitude ###
+
+Same options as apt-cache and apt-get : install, remove, purge
+<pre><code>
+aptitude search "linux loader"
+aptitude search kdebase         # search package kdebase
+
+aptitude show vim       # show package info
 </code></pre>
 
 ### dpkg ###
