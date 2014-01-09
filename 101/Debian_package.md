@@ -87,12 +87,9 @@ apt-cache policy vim             # Print out the detailed information about the 
 
 ### aptitude ###
 
-Same options as apt-cache and apt-get : install, remove, purge
+Same commands as apt-cache and apt-get : install, remove, purge, search, ... see manpage.
 <pre><code>
-aptitude search "linux loader"
-aptitude search kdebase         # search package kdebase
-
-aptitude show vim       # show package info
+aptitude show vim                # show package info of vim
 </code></pre>
 
 ### dpkg ###
