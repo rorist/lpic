@@ -1,21 +1,13 @@
 102.5 Use RPM and YUM package management
 ----------------------------------------
 
-Summary
--------
+## Summary
 
 - Install, re-install, upgrade and remove packages using RPM and YUM.
 - Obtain information on RPM packages such as version, status, dependencies, integrity and signatures.
 - Determine what files a package provides, as well as find which package a specific file comes from.
 
-Install, re-install, upgrade and remove packages using RPM and YUM
-------------------------------------------------------------------
-
-### RPM ###
-
-* rpm -q package-to-search
-* rpm -q -l package #list provided files
-* rpm -q
+## YUM
 
 ### YUM repositories ###
 
@@ -67,6 +59,8 @@ yum update --downloadonly httpd
 yum makecache                       # Grab all packages metadata for caching in available repo
 yum clean                           # Clean all unecessary information in yum cache
 </pre></code>
+
+## RPM
 
 ### Install, remove a package with RPM
 <pre><code>
