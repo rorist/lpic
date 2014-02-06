@@ -31,7 +31,8 @@ mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6
 </pre>
-* Cached package list is in /var/yum/cache/$basearch/$releasever configured in /etc/yum.conf
+* Cached package list is in /var/cache/yum/$basearch/$releasever configured in /etc/yum.conf
+* There also is a filesystem "db" in /var/lib/yum/yumdb
 
 ### Install, remove, purge, download a package with YUM
 
