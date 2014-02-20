@@ -41,12 +41,29 @@
 
 ### Wc, head and tail
 
+* wc: count line/char/bytes/word
+* head
+* tail (multitail)
+
 ### Expand, unexpand and tr
+
+* expand: transform tabs to space (8 default)
+* unexpand
+* tr: translate from a set to an other
 
 ### Pr, nl, and fmt
 
+* Pr: prepare a file for printing -> split in pages and add number, ...
+* nl: number line, add the line number at the beginning
+* fmt: 
+
 ### Sort and uniq
+
+* Sort
+* Uniq: remove same and consequtive lines
 
 ### Cut, paste, and join
 
 ### Sed and awk
+
+### More utils!
